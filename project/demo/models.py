@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 
-class Notes(models.Model):
+class Note(models.Model):
     title = models.CharField(
         max_length=100,
         db_index=True,

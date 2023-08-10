@@ -1,10 +1,10 @@
 from django.contrib import admin
-from demo.models import Notes
+from demo.models import Note
 
 # Register your models here.
 
 
-class NotesAdmin(admin.ModelAdmin):
+class NoteAdmin(admin.ModelAdmin):
     list_display = (
         "id",
         "title",
@@ -13,4 +13,4 @@ class NotesAdmin(admin.ModelAdmin):
     )
 
 
-admin.site.register(Notes, NotesAdmin)
+admin.site.register(Note, NoteAdmin)
