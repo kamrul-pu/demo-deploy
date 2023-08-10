@@ -9,6 +9,6 @@ python3.9 project/manage.py makemigrations --noinput
 python3.9 project/manage.py migrate --noinput
 
 echo "Collect Static..."
-python3 project/manage.py collectstatic --oninput --clear
+python3 project/manage.py collectstatic --noinput --clear
 
 echo "Build Done..."
